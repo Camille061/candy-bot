@@ -109,7 +109,7 @@ body {
 }
 
 .sidebar:hover {
-    width: 1    00px;
+    width: 100px;
     height: 150px;
     transition: .3s;
 }
