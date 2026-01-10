@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Tablet & Mobile */
+@media (max-width: 900px) {
+
+    /* Sidebar ย้ายขึ้นบน */
+    .sidebar {
+        position: static;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+
+    .sidebar ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .sidebar li {
+        margin: 0;
+    }
+
+    /* Content เรียงลง */
+    .parent2 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .box {
+        width: 90%;
+        max-width: 420px;
+    }
+}
+
+/* Mobile เล็ก */
+@media (max-width: 480px) {
+
+    .icon-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .parent {
+        margin-top: 20px;
+    }
+
+    .cmd {
+        font-size: 14px;
+    }
+
+    .tag {
+        padding: 3px 8px;
+        font-size: 13px;
+    }
+
+    .dot {
+        display: block;
+        margin-left: 0;
+        margin-top: 4px;
+        font-size: 13px;
+    }
+
+    .sidebar{
+        text-align: center;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Prompt", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #1e1f22;
+    color: #e5e5e5;
+}
+
+/* HEADER */
+.parent {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.icon-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+/* SIDEBAR */
+.sidebar {
+    padding: 5px;
+    height: 30px;
+    overflow: hidden;
+    width: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: fixed;
+    left: 20px;
+    top: 120px;
+}
+
+.sidebar:hover {
+    width: 100px;
+    height: 150px;
+    transition: .3s;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* MAIN */
+.parent2 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* BOX */
+.box {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border-radius: 14px;
+    width: 320px;
+    backdrop-filter: blur(6px);
+}
+
+/* COMMAND */
+.cmd {
+    margin-bottom: 14px;
+}
+
+.tag {
+    background: #3f5c47;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.dot {
+    margin-left: 8px;
+    color: #b5b5b5;
+}
