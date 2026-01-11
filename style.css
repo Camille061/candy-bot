@@ -67,6 +67,8 @@
     }
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -77,7 +79,7 @@
 body {
     margin: 0;
     font-family: system-ui, sans-serif;
-    background: #1e1f22;
+    background: linear-gradient(to bottom, #000000, #551f1f);
     color: #e5e5e5;
 }
 
@@ -92,9 +94,21 @@ body {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    border: solid #00dce3;
+    border: solid 3px #00dce3;
+    box-shadow: 0 4px 10px #00bfffaf;
+}
+.icon-circle:hover {
+    transform: rotate(360deg);
+    transition: .9s;
 }
 
+.name-bot-text{
+text-shadow: 0 4px 10px #ff00c3;
+}
+.name-bot-text:hover{
+    transform: scale(1.1);
+    transition: .3s ;
+}
 /* SIDEBAR */
 .sidebar {
     padding: 5px;
@@ -106,6 +120,7 @@ body {
     position: fixed;
     left: 20px;
     top: 120px;
+    box-shadow: 0 4px 10px #00d9ff;
 }
 
 .sidebar:hover {
@@ -133,7 +148,11 @@ body {
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 60px;   
+    position: relative;
+    left: 10px;
+    right: 10px;
+
 }
 
 /* BOX */
@@ -143,6 +162,7 @@ body {
     border-radius: 14px;
     width: 320px;
     backdrop-filter: blur(6px);
+    box-shadow: 0 4px 10px #00d5ffbd;
 }
 
 /* COMMAND */
@@ -159,5 +179,18 @@ body {
 
 .dot {
     margin-left: 8px;
-    color: #b5b5b5;
+    color: #ffffff;
+}
+
+#normal-btn {
+    position: absolute;
+    width: 150px;
+    border-radius: 10px;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 10px #0f0000af;
+    background-color: #10e565;
+    box-shadow:  0 4px 10px #250000af;
 }
