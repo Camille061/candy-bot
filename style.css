@@ -96,18 +96,20 @@ body {
     border-radius: 50%;
     border: solid 3px #00dce3;
     box-shadow: 0 4px 10px #00bfffaf;
+     transition: .9s;
 }
 .icon-circle:hover {
     transform: rotate(360deg);
-    transition: .9s;
+
 }
 
 .name-bot-text{
+        transition: .3s ;
 text-shadow: 0 4px 10px #ff00c3;
 }
 .name-bot-text:hover{
     transform: scale(1.1);
-    transition: .3s ;
+
 }
 /* SIDEBAR */
 .sidebar {
@@ -161,7 +163,7 @@ text-shadow: 0 4px 10px #ff00c3;
     padding: 20px;
     border-radius: 14px;
     width: 320px;
-    backdrop-filter: blur(6px);
+
     box-shadow: 0 4px 10px #00d5ffbd;
 }
 
