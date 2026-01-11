@@ -1,9 +1,9 @@
 
-let Main = document.getElementById("main")
+let Game = document.getElementById("game")
 let Invite = document.getElementById("invite")
 
 
 
-Invite.onclick = () => {
-    Main.hidden = true
+function tell() {
+    alert("ยงไม่ได้ทำ")
 }
