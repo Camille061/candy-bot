@@ -123,12 +123,13 @@ text-shadow: 0 4px 10px #ff00c3;
     left: 20px;
     top: 120px;
     box-shadow: 0 4px 10px #00d9ff;
+        transition: .3s;
 }
 
 .sidebar:hover {
     width: 100px;
     height: 150px;
-    transition: .3s;
+
 }
 
 .sidebar ul {
