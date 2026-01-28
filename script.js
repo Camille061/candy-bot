@@ -1,9 +1,7 @@
 
-let Game = document.getElementById("game")
-let Invite = document.getElementById("invite")
 
-
-
-function tell() {
-    alert("ยงไม่ได้ทำ")
+let dashBoardButton = document.getElementById(Features-a)
+dashBoardButton.onclick = () => {
+    alert('kdposko')
 }
+

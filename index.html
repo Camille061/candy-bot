@@ -1,171 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candy website</title>
+    <title>Candy Bot</title>
+
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="https://logowik.com/content/uploads/images/candy-emoji3957.logowik.com.webp">
-
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header data-aos="fade-right" class="parent">
-        <img class="icon-circle" src="img/Red.jpg" alt="">
-        <h1 class="name-bot-text">Candy</h1>
-    </header>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="nav-left">
+        <img src="img/Red.jpg" class="logo" alt="bot logo">
+        <span class="bot-name">Candy</span>
+    </div>
 
-    <!-- SIDEBAR -->
-    <nav class="sidebar">
-        <img class="menu-icon" style="width: 20px; height: 20px;" src="img/link.png" alt="">
-        <ul>
-
-            <li><a id="game" href="#" onclick="alert('ยังไม่ได้ทำ')">เกม</a></li>
-            <li><a id="invite" href="#" onclick="alert('ยังไม่ได้ทำ')">คำเชิญ</a></li>
-        </ul>
+    <nav class="nav-center">
+        <a href="#commands">Commands</a>
+        <a href="#features">Features</a>
+        <a id="Features-a" href="#dashboard">Dashboard</a>
+        <a hclref="#support">Support</a>
     </nav>
 
-    <!-- MAIN CONTENT -->
-    <main class="parent2">
+    <div class="nav-right">
+        <a class="btn invite" href="https://discord.com/oauth2/authorize?client_id=1454904927699734731">Invite Bot</a>
+    </div>
+</header>
 
-        <!-- DESCRIPTION -->
-            <section data-aos="fade-right" class="box commands">
-            <h3>Candy Bot</h3>
-            <p>
-                บอทสำหรับคุยแก้เหงา ที่สามารถพัฒนาความสัมพันธ์ได้
-                และระบบต่าง ๆ ที่ทำให้เซิร์ฟเวอร์ของคุณใช้งานง่ายขึ้น
-                การสร้างเซิร์ฟเวอร์ด้วย Slash Command ช่วยจัดการเซิร์ฟเวอร์ให้เป็นระเบียบในไม่กี่คลิก
-                มีระบบโต้ตอบอัจฉริยะ เพิ่มสีสันให้การสนทนา
-                เหมาะทั้งเซิร์ฟเวอร์เล็กและชุมชนขนาดใหญ่
-                เพิ่มความสนุกและลดความเหงาให้สมาชิกทุกคน
-            </p>
-        </section>
+<!-- ================= HERO ================= -->
+<section class="hero" data-aos="fade-up">
+    <h1>🤖 Candy Bot</h1>
+    <h2>บอท Discord ที่ทำให้เซิร์ฟคุณโคตรปัง</h2>
 
-        <section data-aos="fade-right" class="box commands">
-            <h2>คำสั่งเซิร์ฟเวอร์</h2>
-            <div class="cmd">
-                <span class="tag">/help</span>
-                <span class="dot">ดูคำสั่งทั้งหมด</span>
-            </div>
+    <p>
+        บอทสำหรับคุยแก้เหงา ระบบจัดการเซิร์ฟเวอร์อัจฉริยะ  
+        ใช้งานง่ายด้วย Slash Command เพิ่มสีสันให้ทุกชุมชน
+    </p>
 
-            <div class="cmd">
-                <span class="tag">/create_server</span>
-                <span class="dot">สร้างเซิร์ฟทั้งหมดด่วน</span>
-            </div>
+    <div class="hero-buttons">
+        <a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=1454904927699734731">Invite to Discord</a>
+        <a class="btn secondary" href="#">Dashboard</a>
+    </div>
+</section>
 
-            <div class="cmd">
-                <span class="tag">/delet_all_server</span>
-                <span class="dot">ลบเซิร์ฟเวอร์ทั้งหมด</span>
-            </div>
+<!-- ================= MOCKUP ================= -->
+<section class="mockup" data-aos="fade-up">
+    <img style="width: 300px; height: 250px;" src="img/candy_no_bg.png" alt="Discord Bot Mockup">
+</section>
 
-            <div class="cmd">
-                <span class="tag">/getavatar</span>
-                <span class="dot">ดูรูปโปรไฟล์คนอื่น</span>
-            </div>
+<!-- ================= COMMANDS ================= -->
+<section id="commands" class="commands" data-aos="fade-up">
+    <h2>📜 คำสั่งทั้งหมด</h2>
 
-            <div class="cmd">
-                <span class="tag">/rule</span>
-                <span class="dot">ตั้งกฎดิสคอร์ดอัตโนมัติ</span>
-            </div>
+    <div class="cmd-list">
+        <!-- จัดการเซิร์ฟเวอร์ -->
+        <div class="cmd"><span>/help</span> ดูคำสั่งทั้งหมด</div>
+        <div class="cmd"><span>/create_server</span> สร้างโครงเซิร์ฟเวอร์อัตโนมัติ</div>
+        <div class="cmd"><span>/delete_all_server</span> ลบเซิร์ฟเวอร์ทั้งหมด</div>
+        <div class="cmd"><span>/clear_message</span> ลบข้อความตามจำนวน</div>
+        <div class="cmd"><span>/rule</span> ตั้งกฎดิสคอร์ดอัตโนมัติ</div>
+        <div class="cmd"><span>/nickname</span> ตั้งชื่อเล่นสมาชิก</div>
 
-            <div class="cmd">
-                <span class="tag">/nickname</span>
-                <span class="dot">ตั้งชื่อเล่น</span>
-            </div>
+        <!-- บทบาท / ยศ -->
+        <div class="cmd"><span>/createrole</span> สร้างบทบาท</div>
+        <div class="cmd"><span>/create_role_administrator</span> สร้างบทบาทผู้ดูแลสูงสุด</div>
+        <div class="cmd"><span>/role</span> เพิ่ม / ลบบทบาทสมาชิก</div>
+        <div class="cmd"><span>/warning_letter</span> ส่งใบเตือนสมาชิก</div>
 
-            <div class="cmd">
-                <span class="tag">/createembed</span>
-                <span class="dot">สร้างembed</span>
-            </div>
+        <!-- โปรไฟล์ / ข้อมูล -->
+        <div class="cmd"><span>/getavatar</span> ดูรูปโปรไฟล์สมาชิก</div>
+        <div class="cmd"><span>/birthay</span> อวยพรวันเกิด</div>
+        <div class="cmd"><span>/dev</span> ผู้พัฒนา</div>
 
-            <div class="cmd">
-                <span class="tag">/birthay</span>
-                <span class="dot">อวยพรวันเกิด</span>
-            </div>
+        <!-- เกม / ความสนุก -->
+        <div class="cmd"><span>/guess</span> เกมทายคำถาม</div>
+        <div class="cmd"><span>/roll</span> ทอยลูกเต๋า</div>
+        <div class="cmd"><span>/rps</span> เป่ายิ้งฉุบ</div>
+        <div class="cmd"><span>/ดูดวง</span> ดูดวง</div>
 
-            <div class="cmd">
-                <span class="tag">/clear_message</span>
-                <span class="dot">ลบช้อความตามจำนวน</span>
-            </div>
-            
-             <div class="cmd">
-                <span class="tag">/delete_all_server</span>
-                <span class="dot">ลบเซิร์ฟเวอร์ทั้งหมด</span>
-            </div>
+        <!-- ระบบเศรษฐกิจ -->
+        <div class="cmd"><span>/money</span> ดูเงิน</div>
+        <div class="cmd"><span>/fish</span> ตกปลาหาเงิน</div>
+    </div>
+</section>
 
-             <div class="cmd">
-                <span class="tag">/dev</span>
-                <span class="dot">ผู้พัฒนา</span>
-            </div>
 
-             <div class="cmd">
-                <span class="tag">/createrole</span>
-                <span class="dot">สร้างบทาท</span>
-            </div>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>© 2026 Candy Bot • Made with ❤️ for Discord</p>
+</footer>
 
-             <div class="cmd">
-                <span class="tag">/create_role_administrator</span>
-                <span class="dot">สร้างยศสูงสุด</span>
-            </div>
-
-             <div class="cmd">
-                <span class="tag">/role</span>
-                <span class="dot">เพิ่ม/ลบยศคนในเซิร์ฟ</span>
-            </div>
-
-             <div class="cmd">
-                <span class="tag">/warning_letter</span>
-                <span class="dot">ยิงใบเตือน</span>
-            </div>
-
-             <div class="cmd">
-                <span class="tag">/guess</span>
-                <span class="dot">ทายคำถาม</span>
-            </div>
-
-             <div class="cmd">
-                <span class="tag">/money</span>
-                <span class="dot">ดูเงิน</span>
-            </div>
-            
-            
-            <div class="cmd">
-                <span class="tag">/fish</span>
-                <span class="dot">ตกปลาหาเงิน</span>
-            </div>
-
-            <div class="cmd">
-                <span class="tag">/roll</span>
-                <span class="dot">ทอยลูกเต๋า</span>
-            </div>
-
-            <div class="cmd">
-                <span class="tag">/ดูดวง</span>
-                <span class="dot">ดูดวง</span>
-            </div>
-            <div class="cmd">
-                <span class="tag">/rps</span>
-                <span class="dot">เป่ายิ้งฉุบ</span>
-            </div>
-             
-        </section>
-
-  
-    </main> 
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-
-    let Timeout = document.getElementById("ji")
+    AOS.init();
 </script>
+<script src="script.js"></script>
 </body>
-
 </html>
